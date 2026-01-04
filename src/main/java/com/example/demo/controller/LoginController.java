@@ -53,7 +53,7 @@ public class LoginController {
 		var isCorrectUserAuth = userInfo.isPresent()
 				&&passwordEncoder.matches(form.getPassword(),userInfo.get().getPassword());
 		//var result = userInfo.get().getPassword();
-		//var result2 = form.getPassword();
+		//var result2 = form.getPassword(); aaaaa
 		if(isCorrectUserAuth) {
 			return "redirect:/menu";
 		}else {	
